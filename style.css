@@ -1,7 +1,70 @@
 /*
-Theme Name: Sherpa
+Theme Name: Aranda 2016
 Author: AGI Marketing Solutions
 Author URI: http://agims.com/
 Version: 2.6.1
 Text Domain: sherpa
+Description: A theme developed for Aranda Law Firm
 */
+
+
+#main .clist{
+    background: #34342F;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 2;
+    list-style: none;
+    margin-left: 0;
+    padding: 15px;
+    width:auto;
+}
+#main .clist li{width:100%;}
+#main .clist li.listhead h3 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    color: #dcb981;
+    margin-top: 0;
+}
+
+.ytvideo{
+    top:75px;
+    position:relative;
+}
+
+ul.sub-menu {
+    position: absolute;
+    background: #4b4b4b;
+}
+
+ul.sub-menu li {
+    padding: 15px;
+}
+ul.sub-menu li:hover {
+    background: #34342f;
+}
+
+
+@media screen and (max-width: 992px){
+    .ytvideo {
+        top:0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dropdown-menu {
+        position: relative;
+        top: 100%;
+        float: none;
+        background-color: #444444;
+        border-bottom: 2px solid #565353;
+        border-radius: 4px;
+        box-shadow: none;
+        background-clip: padding-box;
+        display: block;
+        text-align: center;
+        border-top: 0;
+    }
+}

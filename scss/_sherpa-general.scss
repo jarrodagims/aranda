@@ -12,6 +12,12 @@ i.fa {
 	}
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-serif;
+	line-height: 1.25em;
+	letter-spacing: 2px;
+}
+
 @mixin social-media-button($color) {
 	background-color: $color;
 	&:hover,
@@ -21,8 +27,19 @@ i.fa {
 	}
 }
 
+p {
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+ul.unstyled-list { 
+	list-style-type: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .social-media-button {
-	color: $white;
+	color: $mustard;
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
@@ -33,13 +50,17 @@ i.fa {
 		text-decoration: none;
 	}
 	&.lg {
-		height: 40px;
-		width: 40px;
+		height: 36px;
+		width: 36px;
+		-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+
 	}
 	&.sm {
 		height: 25px;
 		width: 25px;
-	}
+		}
 	&.circle {
 		@extend .img-circle;
 	}
@@ -47,7 +68,7 @@ i.fa {
 		@extend .img-rounded;
 	}
 	&.square {
-		@include border-radius(0px);
+		border-radius: 0px;
 	}
 	&.facebook-button {
 		@include social-media-button($color-facebook);
@@ -86,7 +107,7 @@ blockquote.testimonial {
 	padding: 1em 3.1428571429em 1em 10em;
 	position: relative;
 	@media (min-width: $screen-sm-min) {
-		@include border-radius(1em);
+		border-radius: 1em;
 	}
 	&:nth-of-type(2n) {
 		background-color: $sherpa-secondary-color;

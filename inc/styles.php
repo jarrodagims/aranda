@@ -10,12 +10,33 @@ function sherpa_styles() {
 		$main_css_deps = FALSE;
 	}
 	
-	wp_register_style( 'main_css', get_stylesheet_directory_uri() . '/css/style.css', $main_css_deps, '1.0', 'all' );
+	/* Uncomment for Testing purposes */
+	
+	/*
+	if($_SERVER['REMOTE_ADDR'] == '68.201.140.52'):
+	    $main_style = '/css/style-dev.css';
+	else:
+	    $main_style = '/css/style.css';
+	endif;
+	*/
+	
+	// Comment out if not testing purposes
+	$main_style = '/css/style.css';
+	
+	wp_register_style( 'main_css', get_stylesheet_directory_uri() . $main_style, $main_css_deps, time(), 'all' );
 	wp_enqueue_style( 'main_css' );
 
 	wp_register_style( 'font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', false, '4.6.3', 'all' );
 	wp_enqueue_style( 'font_awesome' );
-
+	
+	wp_register_style( 'libre_baskerville', 'https://fonts.googleapis.com/css?family=Libre+Baskerville', false, '1.0', 'all' );
+	wp_enqueue_style( 'libre_baskerville' );
+	
+	wp_register_style( 'roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700', false, '1.0', 'all' );
+	wp_enqueue_style( 'roboto' );
+	
+	wp_register_style('additional', THEMEURL . '/style.css', array('main_css'), time(), 'all');
+	wp_enqueue_style('additional');
 }
 
 // Hook into the 'wp_enqueue_scripts' action

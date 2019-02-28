@@ -6,10 +6,12 @@
 			$collapse_id = rand(1,99);
 			echo "
 						    <!-- Brand and toggle get grouped for better mobile display -->
-						    <div class=\"navbar-header\">
-						      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-$collapse_id\">
+						    <div class=\"navbar-header\">";
+            echo do_shortcode( '[wpml_language_selector_widget]' );
+						      //<a href=\"/es/\" type=\"button\" class=\"btn-espanol\" style=\"display:inline-block;\">En Español</a>
+			echo "			      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-$collapse_id\">
 						        <span class=\"sr-only\">Toggle navigation</span>
-						        <span>Menu</span>
+						        <span><i class=\"fa fa-bars fa-lg\" aria-hidden=\"true\"></i></span>
 						      </button>
 						    </div>
 						

@@ -11,7 +11,7 @@
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: $navbar-margin-bottom;
+  //margin-bottom: $navbar-margin-bottom;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -48,11 +48,12 @@
 // content for the user's viewport.
 
 .navbar-collapse {
-  overflow-x: visible;
-  padding-right: $navbar-padding-horizontal;
+  overflow-x: hidden;
+  padding-right: 0;
   padding-left:  $navbar-padding-horizontal;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  text-align: center;
   @include clearfix;
   -webkit-overflow-scrolling: touch;
 

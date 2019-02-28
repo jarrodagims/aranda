@@ -5,6 +5,11 @@
 	echo "<h1><a href=\"$URI\">Blog</a></h1>\n";
 
 	if(have_posts()) {
+    	$i = 0;
+    	?>
+    	<div class="row">
+        
+        <?php
 		while(have_posts()) {
 			the_post();
 			
@@ -18,10 +23,19 @@
 			}
 				
 			
-			echo "<article>";
+			echo "<article class=\"col-md-6\">";
 			the_title("<h3><a href=\"$permalink\">", "</a>$edit_link</h3>");
-			the_excerpt();
+			sherpa_excerpt();
 			echo "</article>";
+			
+			$i++;
+			if($i % 2 == 0) {
+    			echo '<div class="clearfix"></div>';
+			}
 		}
+    	?>
+    	</div>
+        
+        <?php
 		
 	}

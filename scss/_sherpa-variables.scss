@@ -2,21 +2,25 @@
 
 // Theme Colors
 $black:											#000000;
-$gray-md:										#999999;
+$gray-md:										#4B4B4B;
+$gray-dark:										#34342F;
+$gray-light:									#EFEFEF;
+$mustard:										#DCB981;
+$red:											#AF2300;
 $white:											#FFFFFF;
 
 // Social Media Colors
-$color-facebook:								#3B5998; 
-$color-twitter:									#4099FF;
+$color-facebook:								$gray-md; 
+$color-twitter:									$gray-md;
 $color-rss:										#FF6600;
-$color-google-plus:								#dd4b39;
+$color-google-plus:								$gray-md;
 $color-pinterest:								#BC061C;
 $color-linkedin:								#0077B5;
 $color-phone:									$color-rss;
 
 
 // Defaults
-$sherpa-primary-color:							$black;
+$sherpa-primary-color:							$mustard;
 $sherpa-secondary-color:						$white;
 $sherpa-tertiary-color:							$gray-md;
 
@@ -36,19 +40,29 @@ $sherpa-navbar-default-brand-hover-bg:			transparent;
 
 $sherpa-navbar-default-color:					$black;
 
-$sherpa-navbar-default-link-color:				$black;
+$sherpa-navbar-default-link-color:				#BFBFBF;
 
 $sherpa-navbar-default-link-hover-color:		$white;
-$sherpa-navbar-default-link-hover-bg:			$sherpa-primary-color;
+$sherpa-navbar-default-link-hover-bg:			$gray-dark;
 
 $sherpa-navbar-default-link-active-color:		$white;
-$sherpa-navbar-default-link-active-bg:			$sherpa-primary-color;
+$sherpa-navbar-default-link-active-bg:			$gray-dark;
 
 $sherpa-navbar-default-link-disabled-color:		lighten($sherpa-nav-bg,10%);
 $sherpa-navbar-default-link-disabled-bg:		lighten($sherpa-navbar-default-link-color,10%);
 
 $sherpa-navbar-right-link-color:				$white;
 
-$sherpa-navbar-default-toggle-border-color:		$white;
-$sherpa-navbar-default-toggle-hover-bg:			transparent;
+$sherpa-navbar-default-toggle-border-color:		transparent;
+$sherpa-navbar-default-toggle-hover-bg:			$gray-dark;
 $sherpa-navbar-default-toggle-icon-bar-bg:		$white;
+
+
+$font-family-sans-serif:  						"Roboto", sans-serif;
+$font-family-serif:      						"Libre Baskerville", serif;
+
+$font-size-base:         						18px;
+$font-family-base:       						$font-family-sans-serif;
+
+$link-color:									$red;
+$link-hover-decoration:							none;

@@ -44,8 +44,10 @@
     }
   }
 
-  .navbar-toggle {
+  .navbar-toggle { 
     border-color: $sherpa-navbar-default-toggle-border-color;
+    background-color: $gray-dark;
+    color: #BFBFBF;
     &:hover,
     &:focus {
       background-color: $sherpa-navbar-default-toggle-hover-bg;
@@ -58,7 +60,8 @@
   .navbar-collapse,
   .navbar-form {
     border-color: $sherpa-navbar-default-border;
-  }
+   }
+
 
   // Dropdown menu items
   .navbar-nav {
@@ -67,7 +70,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: $sherpa-navbar-default-link-active-bg;
+        background-color: $sherpa-primary-color;
         color: $sherpa-navbar-default-link-active-color;
       }
     }

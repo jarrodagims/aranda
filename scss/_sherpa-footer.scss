@@ -1,0 +1,127 @@
+#footer {
+	background-color: $gray-dark;
+	color: $white;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	
+	ul#info {
+		li.head {
+			color: $mustard;
+			font-size: 0.778em;
+			font-weight: 700;
+			letter-spacing: 1px;
+			margin-bottom: 0.75em;
+			a, &:visited {
+				color: $mustard;
+				font-weight: 700;
+					&:hover,
+					&:active,
+					&:focus {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}
+			
+		li {
+			font-size: 0.667em;
+			font-weight: 300;
+			letter-spacing: 1px;
+			line-height: 1.5em;
+			a, &:visited {
+				color: $white;
+				font-weight: 300;
+					&:hover,
+					&:active,
+					&:focus {
+						color: $mustard;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		
+	ul#social {
+		li.head {
+			color: $mustard;
+			font-size: 0.778em;
+			font-weight: 700;
+			letter-spacing: 1px;
+			margin-bottom: 0.75em;
+			a, &:visited {
+				color: $mustard;
+					&:hover,
+					&:active,
+					&:focus {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}
+		
+		li { 
+			font-size: 0.9em; 
+			}
+		}
+
+	ul#credit {
+		img { 
+			margin-bottom: 0.75em;
+				@media (max-width:$screen-sm-max) {
+					margin-top: 0.75em;
+					margin-bottom: 0.75em;
+				}
+			}
+		
+		li {
+			color: #828282;
+			font-size: 0.667em;
+			font-weight: 300;
+			letter-spacing: 1px;
+			margin-bottom: 0.75em;
+			a, &:visited {
+				color: #828282;
+					&:hover,
+					&:active,
+					&:focus {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}
+			
+		li.agi {
+			color: #828282;
+			font-size: 0.667em;
+			font-weight: 300;
+			letter-spacing: 1px;
+			margin-bottom: 0.75em;
+			a, &:visited {
+				color: $white;
+				font-weight: 400;
+					&:hover,
+					&:active,
+					&:focus {
+						color: #828282;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		
+		@media (max-width:$screen-sm-max) {
+			padding-top: 1.5em;
+			padding-bottom: 1em;
+			text-align: center;
+		}
+		
+		@media (max-width:$screen-xs-max) {
+			ul#info, ul#credit {
+				li, li.agi, li.head { font-size: 0.889em; letter-spacing: 1px; }
+			}
+			
+			ul#social {
+				li.head { font-size: 0.889em; }
+			}
+		}
+}
